@@ -15,6 +15,8 @@ export class ArticleNewComponent implements OnInit {
   public article: Article;
   public status: string;
   public page_title: string;
+  public url: string;
+  public is_edit: boolean;
   afuConfig = {
     multiple: false,
     formatsAllowed: ".jpg,.png, .gif, .jpeg",
@@ -44,6 +46,8 @@ export class ArticleNewComponent implements OnInit {
   ) {
     this.article = new Article("", "", "", null, null);
     this.page_title = "Crear articulo";
+    this.url = Global.url;
+    this.is_edit = false;
   }
 
   ngOnInit() {}

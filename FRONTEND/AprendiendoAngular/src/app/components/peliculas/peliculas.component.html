@@ -4,7 +4,7 @@
   <section id="content">
     <div id="favorita" *ngIf="favorita">
       <h2 class="subheader">pelicula favorita</h2>
-      <h4>{{ favorita.title | uppercase }}</h4>
+      <h4>{{ favorita.title}}</h4>
       <h4>{{ favorita.year | espar }}</h4>
       <h5>{{ this.fecha | date : "dd/MM/yyyy" }}</h5>
     </div>
